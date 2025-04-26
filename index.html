@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Product list with cart</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script> 
+</head>
+<body>
+
+  <header>
+    <h1 class="">Desserts</h1>
+    <button id="openCart">View Cart</button>
+  </header>
+
+  <main>
+    <ul id="productList" class="grid-container">
+      <li>
+        <img src="./assets/images/image-waffle-thumbnail.jpg" alt="Waffle with Berries"/>
+        <h2>Waffle with Berries</h2>
+        <p>Waffle - $6.50</p>
+        <button class="add-to-cart" data-name="Waffle with Berries" data-price="6.50">Add to Cart</button>
+      </li>
+      <li>
+        <img src="./assets/images/image-creme-brulee-thumbnail.jpg" alt="Vanilla Bean Crème Brûlée"/>
+        <h2>Vanilla Bean Crème Brûlée</h2>
+        <p>Crème Brûlée - $7.00</p>
+        <button class="add-to-cart" data-name="Vanilla Bean Crème Brûlée" data-price="7.00">Add to Cart</button>
+      </li>
+      <li>
+        <img src="./assets/images/image-macaron-thumbnail.jpg" alt="Macaron Mix of Five"/>
+        <h2>Macaron Mix of Five</h2>
+        <p>Macaron - $8.00</p>
+        <button class="add-to-cart" data-name="Macaron Mix of Five" data-price="8.00">Add to Cart</button>
+      </li>
+      <li>
+        <img src="./assets/images/image-tiramisu-thumbnail.jpg" alt="Classic Tiramisu"/>
+        <h2>Classic Tiramisu</h2>
+        <p>Tiramisu - $5.50</p>
+        <button class="add-to-cart" data-name="Classic Tiramisu" data-price="5.50">Add to Cart</button>
+      </li>
+      <li>
+        <img src="./assets/images/image-baklava-thumbnail.jpg" alt="Pistachio Baklava"/>
+        <h2>Pistachio Baklava</h2>
+        <p>Baklava - $4.00</p>
+        <button class="add-to-cart" data-name="Pistachio Baklava" data-price="4.00">Add to Cart</button>
+      </li>
+      <li>
+        <img src="./assets/images/image-meringue-thumbnail.jpg" alt="Lemon Meringue Pie"/>
+        <h2>Lemon Meringue Pie</h2>
+        <p>Pie - $5.00</p>
+        <button class="add-to-cart" data-name="Lemon Meringue Pie" data-price="5.00">Add to Cart</button>
+      </li>
+      <li>
+        <img src="./assets/images/image-cake-thumbnail.jpg" alt="Red Velvet Cake">
+        <h2>Red Velvet Cake</h2>
+        <p>Cake - $4.50</p>
+        <button class="add-to-cart" data-name="Red Velvet Cake" data-price="4.50">Add to Cart</button>
+      </li>
+      <li>
+        <img src="./assets/images/image-creme-brulee-thumbnail.jpg" alt="Vanilla Bean Crème Brûlée"/>
+        <h2>Salted Caramel Brownie</h2>
+        <p>Brownie - $4.50</p>
+        <button class="add-to-cart" data-name="Salted Caramel Brownie" data-price="4.50">Add to Cart</button>
+      </li>
+      <li>
+        <img src="./assets/images/image-panna-cotta-thumbnail.jpg" alt="Vanilla Bean Crème Brûlée"/>
+        <h2>Vanilla Panna Cotta</h2>
+        <p>Panna Cotta - $6.50</p>
+        <button class="add-to-cart" data-name="Vanilla Panna Cotta" data-price="6.50">Add to Cart</button>
+      </li>
+    </ul>
+  </main>
+
+  <div id="cart" class="cartPanel">
+    <h2>Your Cart (<b id="cartCount">0</b>)</h2>
+    <ul id="cartItems"></ul>
+    <p class="cartTotal">Total: $ <b id="cartTotal">0.00</b></p>
+    <button id="cheackout" class="confirmBtn">Confirm Purchase</button>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Jose Nahum Lopez</a>.
+  </div>
+</body>
+</html>
